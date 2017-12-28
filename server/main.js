@@ -4,5 +4,7 @@ import _ from 'lodash';
 import { Links } from '../imports/collections/links';
 
 Meteor.startup(() => {
-
+  Meteor.publish('links', () => {
+    return Links.find({});
+  });
 });
