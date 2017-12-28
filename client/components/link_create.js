@@ -15,6 +15,7 @@ class LinkCreate extends Component {
         this.setState({ error: 'Enter a valid URL' });
       }else{
         this.setState({ error: '' });
+        this.ref.link.value = '';
       }
     });
   }
